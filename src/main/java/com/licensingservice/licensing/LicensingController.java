@@ -26,9 +26,10 @@ public class LicensingController {
 
     /**
      * Get the license
+     * this controller gets the license info from the database
      */
     @RequestMapping("/")
-    public String getLicense(){
+    public LicenseModel getLicense(){
         return licensingService.createLicense();
     }
 
