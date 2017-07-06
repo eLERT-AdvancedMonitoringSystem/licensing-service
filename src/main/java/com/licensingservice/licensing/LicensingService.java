@@ -21,4 +21,22 @@ public class LicensingService {
                 "1");
         return licenseModel;
     }
+
+    /**
+     * @generatNewLicense genrates a new license based on the params entered
+     * @param name the name of the org
+     * @param email the email of the license contact
+     * @param licenseType the type of the license
+     * @param version the current license version
+     * @return
+     */
+    public LicenseModel generateNewLicense(String name, String email, LicenseType licenseType, String version) {
+
+        return new LicenseModel(name,email,"1234345",new Date(),licenseType,version);
+
+    }
+
+
 }
+
+
